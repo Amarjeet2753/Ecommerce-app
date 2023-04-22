@@ -9,7 +9,7 @@ import PageNotFound from './pages/PageNotFound';
 import Register from './pages/Auth/Register';
 import Login from './pages/Auth/Login';
 
-import { ToastContainer } from 'react-toastify';
+// import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import DashBoard from './pages/user/DashBoard';
 import PrivateRoute from './components/Routes/Private.js';
