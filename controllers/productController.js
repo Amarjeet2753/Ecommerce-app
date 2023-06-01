@@ -102,7 +102,7 @@ export const getSingleProductController = async (req,res) =>{
    }
 }
 
-//  get product photo 
+//  get product photo ------------->
 
 export const productPhotoController = async (req,res) =>{
    try{
