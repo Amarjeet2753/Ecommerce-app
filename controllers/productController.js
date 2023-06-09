@@ -54,7 +54,7 @@ export const createProductController = async (req,res) =>{
 }
 
 
-//  get product------->
+//  get all product------->
 
 export const getProductController = async (req,res) =>{
    try{

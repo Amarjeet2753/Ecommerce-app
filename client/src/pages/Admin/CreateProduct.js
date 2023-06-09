@@ -53,6 +53,7 @@ const CreateProduct = () => {
       productData.append("description", description);
       productData.append("price", price);
       productData.append("quantity", quantity);
+      productData.append("shipping", shipping);
       productData.append("photo", photo);
       productData.append("category", category);
 
@@ -61,10 +62,11 @@ const CreateProduct = () => {
       );
 
       if (data?.success) {
-        toast.error(data?.message);
-      } else {
-        toast.success("Product Created Successfully");
+        toast.success("Product Created Successfully !");
         navigate("/dashboard/admin/products");
+      } else {
+        toast.error(data?.message);
+       
       }
 
     }catch(error){

@@ -19,7 +19,7 @@ router.post(
   );
 
 
-  // get product --------->
+  // get all product --------->
 
   router.get('/get-product',getProductController);
   
