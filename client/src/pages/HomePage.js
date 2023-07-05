@@ -11,6 +11,7 @@ import { Checkbox, Radio } from "antd";
 import { Prices } from "../components/Prices.js";
 
 const HomePage = () => {
+  const navigate = useNavigate()
   const [auth, setAuth] = useAuth();
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -169,7 +170,7 @@ const HomePage = () => {
                   <h5 className="card-title">{p.name}</h5>
                   <p className="card-text">{p.description.substring(0, 60)}...</p>
                   <p className="card-text">$ {p.price}</p>
-                  <button className="btn btn-primary ms-1">More Details</button>
+                  <button className="btn btn-primary ms-1" onClick={()=>navigate(`product/${p.slug}`)}>More Details</button>
                   <button className="btn btn-secondary ms-1">
                     Add to Cart
                   </button>
